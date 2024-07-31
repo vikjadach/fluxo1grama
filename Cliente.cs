@@ -1,37 +1,34 @@
-public class _clientes
+public class clientes
 {
     string cadastrarCliente;
-    Int Id;
 
     string CPF;
+
+    string RG;
+
+    string Telefone;
+
+    string Endereco;
+
+    string Cidade;
+
+    string Estado;
     Int Id;
 
-    string RG
-    Int Id;
-
-    string Telefone
-    Int Id;
-
-    string endereco
-    Int Id;
-
-    string cidadeEestado
-    Int Id;
-
-public void setCadastrarCliente (String CadastrarCliente)
+    public void setCadastrarCliente (String CadastrarCliente)
     {
-        this.nome= CadastrarCliente;
+        this.CadastrarCliente = CadastrarCliente;
 
     }
     public string GetCadastrarCliente()
     {
         return cadastrarCliente;
     }
-}
 
-public void setCPF (String CPF)
+
+    public void setCPF (String CPF)
     {
-        this.CPF= CPF;
+        this.CPF = CPF;
 
     }
     public string GetCPF()
@@ -39,27 +36,52 @@ public void setCPF (String CPF)
         return CPF;
     }
 
-public void RG (string RG)
-{
-    this.RG;
-
-}
+    public void RG (string RG)
+    {
+        this.RG = RG;
+    }
     public string GetRG ()
     {
         return RG;
     }
 
-public string GetTelefone (string Telefone)
-{
-    this.Telefone;
-
-} 
-    public string GetTelefone (String Telefone)
+    public void GetTelefone (string Telefone)
     {
-        this.telefone;
+        this.Telefone = Telefone;
+    } 
+    public string GetTelefone ()
+    {
+        return Telefone;
     }
 
-       
+    public void GetEndereco (string Endereco)
+    {
+        this.Endereco = Endereco;
+    }
+    public string SetEndereco ()
+    {
+        return Endereco;
+    }
+    
+    public string GetCidade (string Cidade)
+    {
+        this.Cidade = Cidade;
+    }
+    public void SetCidade ()
+    {
+        return Cidade;
+    }
+
+    public string GetEstado (string Estado)
+    {
+        this.Estado = Estado;
+    }
+    public void SetEstado ()
+    {
+        return Estado;
+    }
+
+}  
 
 
 
