@@ -1,24 +1,18 @@
-﻿namespace fluxo1grama;
+﻿using Microsoft.Maui.Controls;
 
-public partial class MainPage : ContentPage
+namespace fluxo1grama
 {
-	int count = 0;
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        private async void OnNextPageClicked(object sender, EventArgs e)
+        {
+            // Navegar para a próxima página
+            await Navigation.PushAsync(new NextPage());
+        }
+    }
 }
-
