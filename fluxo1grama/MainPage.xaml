@@ -3,41 +3,112 @@
              x:Class="fluxo1grama.MainPage"
              BackgroundColor="#EAEAEA">
     <Grid>
-        <!-- Imagem da Camiseta -->
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+       
         <Image Source="camisa.png"
                Aspect="AspectFit"
                VerticalOptions="Start"
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center"
+                Grid.Row="0"/>
 
-        <!-- Botões de Navegação -->
-        <StackLayout VerticalOptions="Center"
-                     HorizontalOptions="Center"
-                     Spacing="10">
+        
+
             <Button Text="Fornecedor"
-                     HorizontalOptions="FillAndExpand" />
-            <Button Text="Matéria-Prima"
-                    HorizontalOptions="FillAndExpand" />
-            <Button Text="Cliente"
-                    HorizontalOptions="FillAndExpand" />
-            <Button Text="Pedido"
-                    HorizontalOptions="FillAndExpand" />
-            <Button Text="Almoxarifado"
-                    HorizontalOptions="FillAndExpand" />
-            <Button Text="Forma de Pagamento"
-                    HorizontalOptions="FillAndExpand" />
-            <Button Text="Produtos"
-                    HorizontalOptions="FillAndExpand" />
-            <Button Text="Setores"
-                    HorizontalOptions="FillAndExpand" />
-        </StackLayout>
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="1"
+                    BackgroundColor="white"
+                    TextColor="black"
+                    CornerRadius="5"
+                    Grid.Column="0"
+                    Margin="0,5"
+                    Clicked="botaofornecedor"
+                    />
 
-        <!-- Setinha de Navegação -->
-        <ImageButton Source="arrow_right.png"
-                     WidthRequest="50"
-                     HeightRequest="50"
-                     VerticalOptions="End"
-                     HorizontalOptions="End"
-                     Margin="20"
-                     Clicked="OnNextPageClicked" />
+            <Button Text="Matéria-Prima"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="2"
+                    BackgroundColor="White"
+                    TextColor="black"
+                    CornerRadius="5"
+                    Grid.Column="0"
+                    Margin="0,5"
+                    Clicked="botaomateriaprima"/>
+
+            <Button Text="Cliente"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="3"
+                    BackgroundColor="white"
+                    TextColor="black"
+                    CornerRadius="5"
+                    Grid.Column="0"
+                    Margin="0,5"
+                    Clicked="botaocliente"/>
+
+            <Button Text="Pedido"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="4"
+                    BackgroundColor="white"
+                    TextColor="black"
+                    CornerRadius="5"
+                    Grid.Column="0"
+                    Margin="0,5"
+                    Clicked="botaopedido"/>
+
+            <Button Text="Almoxarifado"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="5"
+                    BackgroundColor="white"
+                    TextColor="black"
+                    CornerRadius="5"
+                    Grid.Column="0"
+                    Margin="0,5"
+                    Clicked="botaoalmoxarifado"/>
+
+            <Button Text="Forma de Pagamento"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="6"
+                    BackgroundColor="white"
+                    TextColor="black"
+                    CornerRadius="5"
+                    Grid.Column="0"
+                    Margin="0,5"
+                    Clicked="botaoformadepagamento"/>
+
+            <Button Text="Produtos"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="7"
+                    BackgroundColor="white"
+                    TextColor="black"
+                    CornerRadius="5"
+                    Grid.Column="0"
+                    Margin="0,5"
+                    Clicked="botaoprodutos"/>
+
+            <Button Text="Setores"
+                    HorizontalOptions="FillAndExpand"
+                    Grid.Row="8"
+                    BackgroundColor="white"
+                    TextColor="black"
+                    CornerRadius="5"
+                    Grid.Column="0"
+                    Margin="0,5"
+                    Clicked="botaosetores"/>
+
+
+
     </Grid>
 </ContentPage>
