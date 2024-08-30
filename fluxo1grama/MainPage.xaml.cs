@@ -1,18 +1,19 @@
 ﻿using System.Diagnostics.Tracing;
 using Microsoft.Maui.Controls;
-using Vision;
 
-namespace fluxo1grama
+namespace fluxo1grama;
 
     public partial class MainPage : ContentPage
     {
+        Cliente cliente;
         public MainPage()
         {
             InitializeComponent();
+            cliente = new Cliente();
         }
         public void botaocliente(object sender, EventArgs args)
         {
-            Application.Currente.Mainpage = new Cliente;
+            Application.Currente.Mainpage = new Cliente();
 
         } 
         public void botaomateriaprima(object sender, EventTags args)
@@ -26,23 +27,23 @@ namespace fluxo1grama
         }
         public void botaopedido(object sender, EventArgs args)
         {
-            Application.Current.MainPage = new Pedido()
+            Application.Current.MainPage = new Pedido();
         }
         public void botaoalmoxarifado(object sender, EventArgs args)
         {
-            Application.Current.MainPage = new Almoxarifado()
+            Application.Current.MainPage = new Almoxarifado();
         }
         public void botaoformadepagamento(object sender, EventArgs args)
         {
-            Application.Current.MainPage = new Formadepagamento
+            Application.Current.MainPage = new Formadepagamento();
         }
         public void botaoprodutos(object sender, EventArgs args)
         {
-            Application.Current.MainPage = new Produtos
+            Application.Current.MainPage = new Produtos();
         }
         public void botaosetores(object sender, EventArgs args)
         {
-            Application.Current.MainPage = new Setores
+            Application.Current.MainPage = new Setores();
         }
         
 

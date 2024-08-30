@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourNamespace.MainPage"
+             BackgroundColor="Lavender">
+
+    <Grid Padding="20">
+        <!-- Top Section: Title -->
+        <StackLayout VerticalOptions="Start">
+            <Label Text="tela fornecedor"
+                   BackgroundColor="White"
+                   HorizontalOptions="Center"
+                   Padding="10"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+
+        <!-- Search Bar -->
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10" Margin="0,20,0,20">
+            <Entry x:Name="SearchEntry" Placeholder="pesquisar" HorizontalOptions="FillAndExpand"/>
+            <Button Text="🔍" FontSize="Large" Clicked="OnSearchButtonClicked" />
+            <Button Text="+" FontSize="Large" Clicked="OnAddButtonClicked" />
+        </StackLayout>
+
+        <!-- Fornecedor List -->
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="15">
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10" CornerRadius="20">
+                <Label Text="fornecedor 1" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <Button Text="🗑️" Clicked="OnDeleteButtonClicked" />
+                <Button Text="✏️" Clicked="OnEditButtonClicked" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10" CornerRadius="20">
+                <Label Text="fornecedor 2" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <Button Text="🗑️" Clicked="OnDeleteButtonClicked" />
+                <Button Text="✏️" Clicked="OnEditButtonClicked" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10" CornerRadius="20">
+                <Label Text="fornecedor 3" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <Button Text="🗑️" Clicked="OnDeleteButtonClicked" />
+                <Button Text="✏️" Clicked="OnEditButtonClicked" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10" CornerRadius="20">
+                <Label Text="fornecedor 4" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <Button Text="🗑️" Clicked="OnDeleteButtonClicked" />
+                <Button Text="✏️" Clicked="OnEditButtonClicked" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10" CornerRadius="20">
+                <Label Text="fornecedor 5" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <Button Text="🗑️" Clicked="OnDeleteButtonClicked" />
+                <Button Text="✏️" Clicked="OnEditButtonClicked" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10" CornerRadius="20">
+                <Label Text="fornecedor 6" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                <Button Text="🗑️" Clicked="OnDeleteButtonClicked" />
+                <Button Text="✏️" Clicked="OnEditButtonClicked" />
+            </StackLayout>
+        </StackLayout>
+
+        <!-- Bottom Navigation -->
+        <Grid VerticalOptions="End">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="←"
+                    FontSize="Large"
+                    HorizontalOptions="End"
+                    Grid.Column="0"
+                    Clicked="OnLeftArrowClicked" />
+            <Button Text="→"
+                    FontSize="Large"
+                    HorizontalOptions="Start"
+                    Grid.Column="1"
+                    Clicked="OnRightArrowClicked" />
+        </Grid>
+    </Grid>
+</ContentPage>

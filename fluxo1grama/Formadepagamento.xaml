@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourNamespace.MainPage"
+             BackgroundColor="Lavender">
+    
+    <Grid Padding="20">
+        <!-- Top Section: Title -->
+        <StackLayout VerticalOptions="Start">
+            <Label Text="tela pagamentos"
+                   BackgroundColor="White"
+                   HorizontalOptions="Center"
+                   Padding="10"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+
+        <!-- Payment Options -->
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="20">
+            <!-- Realizar Pagamentos Button -->
+            <Button Text="realizar pagamentos"
+                    BackgroundColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"/>
+            
+            <!-- Dinheiro Button with Icon -->
+            <Button BackgroundColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    WidthRequest="200">
+                <Button.Content>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="dinheiro" VerticalOptions="Center"/>
+                        <Image Source="money_icon.png" WidthRequest="30" HeightRequest="30"/>
+                    </StackLayout>
+                </Button.Content>
+            </Button>
+
+            <!-- Pix Button with Icon -->
+            <Button BackgroundColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    WidthRequest="200">
+                <Button.Content>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="pix" VerticalOptions="Center"/>
+                        <Image Source="pix_icon.png" WidthRequest="30" HeightRequest="30"/>
+                    </StackLayout>
+                </Button.Content>
+            </Button>
+
+            <!-- Cartão Button with Icon -->
+            <Button BackgroundColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    WidthRequest="200">
+                <Button.Content>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="cartão" VerticalOptions="Center"/>
+                        <Image Source="card_icon.png" WidthRequest="30" HeightRequest="30"/>
+                    </StackLayout>
+                </Button.Content>
+            </Button>
+        </StackLayout>
+
+        <!-- Bottom Navigation -->
+        <Grid VerticalOptions="End">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="←"
+                    FontSize="Large"
+                    HorizontalOptions="End"
+                    Grid.Column="0"
+                    Clicked="OnLeftArrowClicked" />
+            <Button Text="→"
+                    FontSize="Large"
+                    HorizontalOptions="Start"
+                    Grid.Column="1"
+                    Clicked="OnRightArrowClicked" />
+        </Grid>
+    </Grid>
+</ContentPage>

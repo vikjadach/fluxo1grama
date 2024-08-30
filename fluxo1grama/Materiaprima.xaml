@@ -1,0 +1,67 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fluxo1grama.MainPage"
+             BackgroundColor="Lavender">
+    <VerticalStackLayout Padding="10" Spacing="15">
+        
+        <!-- Title Label -->
+        <Label Text="tela matéria-prima"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               BackgroundColor="White"
+               TextColor="Black"
+               Padding="10"/>
+        
+        <!-- Search Section -->
+        <HorizontalStackLayout>
+            <Entry x:Name="SearchEntry"
+                   Placeholder="pesquisar"
+                   HorizontalOptions="FillAndExpand"/>
+            <Button Text="+" FontAttributes="Bold" />
+        </HorizontalStackLayout>
+        
+        <!-- List of Items -->
+        <VerticalStackLayout Spacing="10">
+            <!-- Repeat this StackLayout for each item in the list -->
+            <HorizontalStackLayout>
+                <Frame CornerRadius="20" BackgroundColor="White" Padding="5" HorizontalOptions="FillAndExpand">
+                    <Label Text="algodão" VerticalOptions="Center" />
+                </Frame>
+                <Button Text="🗑" FontSize="Medium" BackgroundColor="Transparent"/>
+                <Button Text="✏" FontSize="Medium" BackgroundColor="Transparent"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Frame CornerRadius="20" BackgroundColor="White" Padding="5" HorizontalOptions="FillAndExpand">
+                    <Label Text="linha" VerticalOptions="Center" />
+                </Frame>
+                <Button Text="🗑" FontSize="Medium" BackgroundColor="Transparent"/>
+                <Button Text="✏" FontSize="Medium" BackgroundColor="Transparent"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Frame CornerRadius="20" BackgroundColor="White" Padding="5" HorizontalOptions="FillAndExpand">
+                    <Label Text="poliéster" VerticalOptions="Center" />
+                </Frame>
+                <Button Text="🗑" FontSize="Medium" BackgroundColor="Transparent"/>
+                <Button Text="✏" FontSize="Medium" BackgroundColor="Transparent"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Frame CornerRadius="20" BackgroundColor="White" Padding="5" HorizontalOptions="FillAndExpand">
+                    <Label Text="linho" VerticalOptions="Center" />
+                </Frame>
+                <Button Text="🗑" FontSize="Medium" BackgroundColor="Transparent"/>
+                <Button Text="✏" FontSize="Medium" BackgroundColor="Transparent"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <!-- Navigation Buttons -->
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+            <Button Text="←" FontSize="Large" />
+            <Button Text="→" FontSize="Large" />
+        </HorizontalStackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>

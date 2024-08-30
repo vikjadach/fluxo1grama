@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeuNamespace.MainPage"
+             BackgroundColor="#D8BFD8">
+    
+    <Grid RowDefinitions="Auto, *, Auto" Padding="10">
+        <!-- Header -->
+        <BoxView Grid.Row="0" HeightRequest="50" BackgroundColor="White" />
+        <Label Grid.Row="0" Text="almoxarifado" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+
+        <!-- Content Buttons -->
+        <StackLayout Grid.Row="1" Spacing="20" VerticalOptions="Center">
+            <Button Text="recebimento" BackgroundColor="White" TextColor="Black" CornerRadius="20" />
+            <Button Text="armazenagem" BackgroundColor="White" TextColor="Black" CornerRadius="20" />
+            <Button Text="movimentação" BackgroundColor="White" TextColor="Black" CornerRadius="20" />
+        </StackLayout>
+
+        <!-- Footer Navigation -->
+        <Grid Grid.Row="2" ColumnDefinitions="*, *" Padding="20">
+            <Button Text="⟵" HorizontalOptions="Start" VerticalOptions="Center" />
+            <Button Text="⟶" HorizontalOptions="End" VerticalOptions="Center" />
+        </Grid>
+    </Grid>
+</ContentPage>
